@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.peeko32213.seafarer.mixins",
+  "package": "com.barlinc.seafarer.mixins",
   "compatibilityLevel": "JAVA_17",
   "refmap": "seafarer.refmap.json",
   "mixins": [

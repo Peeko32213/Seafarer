@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#seafarer:warm_oceans",
+  "biomes": "minecraft:warm_ocean",
   "features": "seafarer:disk_warm_reef_sand",
   "step": "vegetal_decoration"
 }

@@ -1,9 +1,7 @@
 {
   "values": [
     "seafarer:volcanic_island",
-    "seafarer:warm_reef",
     "seafarer:flowering_beach",
-    "seafarer:glass_beach",
-    "seafarer:grassy_beach"
+    "seafarer:glass_beach"
   ]
 }

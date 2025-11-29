@@ -1,4 +1,3 @@
-// 1.20.1	2025-10-03T16:27:24.8635245	Tags for minecraft:worldgen/biome mod id seafarer
-0693de23edccb32af7b13fed4e9feaa15d1f0fac data/minecraft/tags/worldgen/biome/is_overworld.json
+// 1.20.1	2025-11-29T12:41:20.6444179	Tags for minecraft:worldgen/biome mod id seafarer
+1b4ec7f34b02cc36a81de9ed95cb0c9a803d3aea data/minecraft/tags/worldgen/biome/is_overworld.json
 25b0032ca8b648ea4571a48190e9a350e0c3d00e data/seafarer/tags/worldgen/biome/has_structure/volcano.json
-8dcf19a22a1f9df7b20462c0dce39d9c4c3ac375 data/seafarer/tags/worldgen/biome/warm_oceans.json
