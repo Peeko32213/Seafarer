@@ -34,7 +34,7 @@ public abstract class OverworldBiomeBuilderMixin {
     private final Climate.Parameter seafarer$volcanicIslandTemperature = Climate.Parameter.span(0.24F, 1.0F);
 
     @Inject(method = "addOffCoastBiomes", at = @At("HEAD"))
-    private void S$addOffCoastBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consumer, CallbackInfo ci) {
+    private void seafarer$addOffCoastBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consumer, CallbackInfo ci) {
         this.addSurfaceBiome(consumer, seafarer$volcanicIslandTemperature, FULL_RANGE, mushroomFieldsContinentalness, FULL_RANGE, FULL_RANGE, 0.0F, SeafarerBiomes.VOLCANIC_ISLAND);
     }
 }
