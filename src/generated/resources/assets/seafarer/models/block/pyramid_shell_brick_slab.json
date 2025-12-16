@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "seafarer:block/pyramid_shell_bricks",
-    "side": "seafarer:block/pyramid_shell_bricks",
-    "top": "seafarer:block/pyramid_shell_bricks"
-  }
-}

@@ -1,13 +1,7 @@
 package com.barlinc.seafarer;
 
-import com.barlinc.seafarer.data.*;
+import com.barlinc.seafarer.datagen.*;
 import com.barlinc.seafarer.events.ClientEvents;
-import com.barlinc.seafarer.registry.*;
-import com.barlinc.seafarer.worldgen.biome.SeafarerBiomePlacements;
-import com.barlinc.seafarer.worldgen.biome.SeafarerSurfaceRules;
-import com.barlinc.seafarer.worldgen.biome.*;
-import com.barlinc.seafarer.events.*;
-import com.barlinc.seafarer.data.*;
 import com.barlinc.seafarer.registry.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -64,8 +58,6 @@ public class Seafarer {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            if (SeafarerConfig.BIOMES.get()) SeafarerBiomePlacements.register();
-            SeafarerSurfaceRules.register();
             addToComposter(SeafarerBlocks.COASTAL_LAVENDER, 0.7F);
             addToComposter(SeafarerBlocks.COASTAL_WILDFLOWER, 0.3F);
             addToComposter(SeafarerBlocks.SEA_THRIFT, 0.5F);
@@ -107,7 +99,7 @@ public class Seafarer {
         generator.addProvider(client, new SeafarerSoundDefinitionsProvider(output, helper));
     }
 
-    public static void addToComposter(RegistryObject<Block> item, float amountOfCompost){
+    public static void addToComposter(RegistryObject<Block> item, float amountOfCompost) {
         ComposterBlock.COMPOSTABLES.put(item.get().asItem(), amountOfCompost);
     }
 

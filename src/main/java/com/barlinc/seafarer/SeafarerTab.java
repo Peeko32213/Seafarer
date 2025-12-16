@@ -26,16 +26,6 @@ public class SeafarerTab {
                             }
                         });
 
-                        // horseshoe crab
-                        output.accept(SeafarerItems.HORSESHOE_CRAB_BUCKET.get());
-                        output.accept(SeafarerItems.RAW_HORSESHOE_CRAB.get());
-                        output.accept(SeafarerItems.COOKED_HORSESHOE_CRAB.get());
-
-                        // shore crab
-                        output.accept(SeafarerItems.SHORE_CRAB_BUCKET.get());
-                        output.accept(SeafarerItems.RAW_SHORE_CRAB_LEG.get());
-                        output.accept(SeafarerItems.COOKED_SHORE_CRAB_LEG.get());
-
                         output.accept(SeafarerItems.SOY_SAUCE.get());
 
                         // junk

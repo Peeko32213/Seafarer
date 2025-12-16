@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:volcanic_sandstone"
-  },
-  "result": "seafarer:chiseled_volcanic_sandstone"
-}

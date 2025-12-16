@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "seafarer:block/smooth_scoria",
-    "side": "seafarer:block/smooth_scoria",
-    "top": "seafarer:block/smooth_scoria"
-  }
-}

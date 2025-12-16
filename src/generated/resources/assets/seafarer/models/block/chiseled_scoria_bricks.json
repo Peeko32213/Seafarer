@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "seafarer:block/chiseled_scoria_bricks"
-  }
-}

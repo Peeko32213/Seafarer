@@ -69,21 +69,11 @@ public final class ClientEvents {
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(SeafarerEntities.HORSESHOE_CRAB.get(), HorseshoeCrabRenderer::new);
         event.registerEntityRenderer(SeafarerEntities.MAGMAW.get(), MagmawRenderer::new);
-        event.registerEntityRenderer(SeafarerEntities.MANTA_RAY.get(), MantaRayRenderer::new);
-        event.registerEntityRenderer(SeafarerEntities.SHORE_CRAB.get(), ShoreCrabRenderer::new);
-        event.registerEntityRenderer(SeafarerEntities.SNAKE_MACKEREL.get(), SnakeMackerelRenderer::new);
-        event.registerEntityRenderer(SeafarerEntities.SUNFISH.get(), SunfishRenderer::new);
     }
 
     @SubscribeEvent
     public static void registerEntityLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(SeafarerModelLayers.HORSESHOE_CRAB, HorseshoeCrabModel::createBodyLayer);
         event.registerLayerDefinition(SeafarerModelLayers.MAGMAW, MagmawModel::createBodyLayer);
-        event.registerLayerDefinition(SeafarerModelLayers.MANTA_RAY, MantaRayModel::createBodyLayer);
-        event.registerLayerDefinition(SeafarerModelLayers.SHORE_CRAB, ShoreCrabModel::createBodyLayer);
-        event.registerLayerDefinition(SeafarerModelLayers.SNAKE_MACKEREL, SnakeMackerelModel::createBodyLayer);
-        event.registerLayerDefinition(SeafarerModelLayers.SUNFISH, SunfishModel::createBodyLayer);
     }
 }

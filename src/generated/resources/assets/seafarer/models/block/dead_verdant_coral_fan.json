@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/coral_fan",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "fan": "seafarer:block/dead_verdant_coral_fan"
-  }
-}

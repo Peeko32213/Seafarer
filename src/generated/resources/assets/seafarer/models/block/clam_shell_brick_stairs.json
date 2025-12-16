@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "seafarer:block/clam_shell_bricks",
-    "side": "seafarer:block/clam_shell_bricks",
-    "top": "seafarer:block/clam_shell_bricks"
-  }
-}

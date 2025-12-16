@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:scoria"
-  },
-  "result": "seafarer:scoria_wall"
-}

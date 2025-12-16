@@ -20,6 +20,7 @@ import net.minecraft.world.level.levelgen.structure.StructurePiece;
 import net.minecraft.world.level.levelgen.structure.pieces.StructurePieceSerializationContext;
 import net.minecraft.world.level.levelgen.synth.ImprovedNoise;
 import net.minecraft.world.ticks.ScheduledTick;
+import org.jetbrains.annotations.NotNull;
 
 public class VolcanoStructurePiece extends StructurePiece {
 
@@ -73,7 +74,7 @@ public class VolcanoStructurePiece extends StructurePiece {
     }
 
     @Override
-    protected void addAdditionalSaveData(StructurePieceSerializationContext context, CompoundTag compoundTag) {
+    protected void addAdditionalSaveData(@NotNull StructurePieceSerializationContext context, CompoundTag compoundTag) {
         compoundTag.putInt("radius_x", this.radiusX);
         compoundTag.putInt("radius_z", this.radiusZ);
         compoundTag.putLong("noise_seed", this.noiseSeed);
@@ -82,7 +83,7 @@ public class VolcanoStructurePiece extends StructurePiece {
     }
 
     @Override
-    public void postProcess(WorldGenLevel level, StructureManager structureManager, ChunkGenerator generator, RandomSource random, BoundingBox chunkBox, ChunkPos chunkPos, BlockPos pos) {
+    public void postProcess(@NotNull WorldGenLevel level, @NotNull StructureManager structureManager, @NotNull ChunkGenerator generator, @NotNull RandomSource random, @NotNull BoundingBox chunkBox, @NotNull ChunkPos chunkPos, BlockPos pos) {
         int calderaCutoffY = pos.getY() + this.getCalderaHeight();
         int lavaY = pos.getY() + this.getLavaLevel();
         int topY = pos.getY() + this.getCalderaHeight() - 3;
@@ -173,6 +174,6 @@ public class VolcanoStructurePiece extends StructurePiece {
             return Float.NaN;
         }
         float noiseValue = (float) Math.abs(noise.noise(x * 0.21 + 0.01, 0.0, z * 0.21 + 0.01)) * 0.45F + 1.0F;
-        return 2.0F / distanceSquared * noiseValue - 2.0F - 4.0F;
+        return 1.5F / distanceSquared * noiseValue - 1.5F - 2.0F;
     }
 }

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:swirl_shell_bricks"
-  },
-  "result": "seafarer:swirl_shell_brick_stairs"
-}

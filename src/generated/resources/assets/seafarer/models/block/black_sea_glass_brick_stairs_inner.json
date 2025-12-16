@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "seafarer:block/black_sea_glass_bricks",
-    "side": "seafarer:block/black_sea_glass_bricks",
-    "top": "seafarer:block/black_sea_glass_bricks"
-  }
-}

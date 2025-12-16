@@ -1,6 +1,0 @@
-{
-  "parent": "seafarer:block/large_gorgonian_bottom",
-  "textures": {
-    "bottom": "seafarer:block/attum_gorgonian_bottom"
-  }
-}

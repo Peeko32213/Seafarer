@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:green_sea_glass_bricks"
-  },
-  "result": "seafarer:green_sea_glass_brick_stairs"
-}

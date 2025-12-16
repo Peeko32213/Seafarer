@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "seafarer:block/starry_volcanic_sand_3"
-  }
-}

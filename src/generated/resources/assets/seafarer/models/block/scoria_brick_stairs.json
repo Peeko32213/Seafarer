@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "seafarer:block/scoria_bricks",
-    "side": "seafarer:block/scoria_bricks",
-    "top": "seafarer:block/scoria_bricks"
-  }
-}

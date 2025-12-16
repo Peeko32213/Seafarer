@@ -10,13 +10,13 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.stream.Stream;
 
-public abstract class SchoolingFishMob extends SeaMob {
+public abstract class SchoolingFishMob extends SeafarerMob {
 
     @Nullable
     private SchoolingFishMob leader;
     protected int schoolSize = 1;
 
-    public SchoolingFishMob(EntityType<? extends SeaMob> entityType, Level level) {
+    public SchoolingFishMob(EntityType<? extends SeafarerMob> entityType, Level level) {
         super(entityType, level);
     }
 

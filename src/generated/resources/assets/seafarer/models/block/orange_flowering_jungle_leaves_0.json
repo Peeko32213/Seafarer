@@ -1,7 +1,0 @@
-{
-  "parent": "seafarer:block/overlay_leaves",
-  "textures": {
-    "all": "minecraft:block/jungle_leaves",
-    "overlay": "seafarer:block/orange_flowering_jungle_leaves_overlay_0"
-  }
-}

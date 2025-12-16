@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:smooth_volcanic_sandstone"
-  },
-  "result": "seafarer:smooth_volcanic_sandstone_stairs"
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "seafarer:block/shelly_coraline_sand_0"
-  }
-}

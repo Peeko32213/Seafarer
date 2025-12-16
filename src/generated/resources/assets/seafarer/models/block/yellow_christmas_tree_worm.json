@@ -1,6 +1,0 @@
-{
-  "parent": "seafarer:block/christmas_tree_worm",
-  "textures": {
-    "worm": "seafarer:block/yellow_christmas_tree_worm"
-  }
-}

@@ -6,7 +6,10 @@
   "refmap": "seafarer.refmap.json",
   "mixins": [
     "BrushItemMixin",
-    "PoseMixin"
+    "MinecraftServerMixin",
+    "OverworldBiomeBuilderMixin",
+    "PoseMixin",
+    "accessor.NoiseGeneratorSettingsAccessor"
   ],
   "client": [
   ],

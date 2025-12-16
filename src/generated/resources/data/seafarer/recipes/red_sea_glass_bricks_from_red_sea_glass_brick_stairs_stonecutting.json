@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "seafarer:red_sea_glass_bricks"
-  },
-  "result": "seafarer:red_sea_glass_brick_stairs"
-}

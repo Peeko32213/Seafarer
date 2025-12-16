@@ -1,7 +1,0 @@
-{
-  "parent": "seafarer:block/emissive_block",
-  "textures": {
-    "all": "seafarer:block/molten_scoria",
-    "glow": "seafarer:block/molten_scoria_glow"
-  }
-}

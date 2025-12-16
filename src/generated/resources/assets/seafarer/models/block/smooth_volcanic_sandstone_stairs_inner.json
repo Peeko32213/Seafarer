@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "seafarer:block/smooth_volcanic_sandstone",
-    "side": "seafarer:block/smooth_volcanic_sandstone",
-    "top": "seafarer:block/smooth_volcanic_sandstone"
-  }
-}

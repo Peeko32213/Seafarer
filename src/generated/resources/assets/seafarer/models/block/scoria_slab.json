@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "seafarer:block/scoria",
-    "side": "seafarer:block/scoria",
-    "top": "seafarer:block/scoria"
-  }
-}
