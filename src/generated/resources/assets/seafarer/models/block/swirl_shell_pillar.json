@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "seafarer:block/swirl_shell_pillar_top",
+    "side": "seafarer:block/swirl_shell_pillar"
+  }
+}

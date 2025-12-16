@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "seafarer:block/light_blue_pebbled_sea_glass"
+  }
+}

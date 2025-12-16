@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "seafarer:block/lime_mosaic_sea_glass_lamp_top",
+    "side": "seafarer:block/lime_mosaic_sea_glass_lamp"
+  }
+}

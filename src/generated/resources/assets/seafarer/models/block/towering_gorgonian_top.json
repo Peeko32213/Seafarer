@@ -1,0 +1,6 @@
+{
+  "parent": "seafarer:block/large_gorgonian_top",
+  "textures": {
+    "top": "seafarer:block/towering_gorgonian_top"
+  }
+}

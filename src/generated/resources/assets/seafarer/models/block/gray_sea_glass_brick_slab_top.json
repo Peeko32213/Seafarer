@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "seafarer:block/gray_sea_glass_bricks",
+    "side": "seafarer:block/gray_sea_glass_bricks",
+    "top": "seafarer:block/gray_sea_glass_bricks"
+  }
+}

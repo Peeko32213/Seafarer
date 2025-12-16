@@ -10,9 +10,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.minecraftforge.client.model.generators.*;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.ModelFile.ExistingModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -22,8 +25,8 @@ import static com.barlinc.seafarer.registry.SeafarerBlocks.*;
 
 public class SeafarerBlockstateProvider extends BlockStateProvider {
 
-    public SeafarerBlockstateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, Seafarer.MOD_ID, exFileHelper);
+    public SeafarerBlockstateProvider(GatherDataEvent event) {
+        super(event.getGenerator().getPackOutput(), Seafarer.MOD_ID, event.getExistingFileHelper());
     }
 
     private ResourceLocation key(Block block) {

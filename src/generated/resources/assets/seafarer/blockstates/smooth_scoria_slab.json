@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "seafarer:block/smooth_scoria_slab"
+    },
+    "type=double": {
+      "model": "seafarer:block/smooth_scoria"
+    },
+    "type=top": {
+      "model": "seafarer:block/smooth_scoria_slab_top"
+    }
+  }
+}

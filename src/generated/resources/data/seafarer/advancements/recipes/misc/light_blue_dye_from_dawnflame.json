@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dawnflame": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:dawnflame"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:light_blue_dye_from_dawnflame"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dawnflame",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:light_blue_dye_from_dawnflame"
+    ]
+  },
+  "sends_telemetry_event": false
+}

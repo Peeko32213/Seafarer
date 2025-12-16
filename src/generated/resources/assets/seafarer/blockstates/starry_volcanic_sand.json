@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seafarer:block/starry_volcanic_sand_0"
+      },
+      {
+        "model": "seafarer:block/starry_volcanic_sand_1"
+      },
+      {
+        "model": "seafarer:block/starry_volcanic_sand_2"
+      },
+      {
+        "model": "seafarer:block/starry_volcanic_sand_3"
+      }
+    ]
+  }
+}

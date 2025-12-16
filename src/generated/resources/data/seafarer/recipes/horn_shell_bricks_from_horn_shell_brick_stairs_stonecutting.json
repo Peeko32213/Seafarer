@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:horn_shell_bricks"
+  },
+  "result": "seafarer:horn_shell_brick_stairs"
+}

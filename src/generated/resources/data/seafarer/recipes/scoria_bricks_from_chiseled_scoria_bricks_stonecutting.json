@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:scoria_bricks"
+  },
+  "result": "seafarer:chiseled_scoria_bricks"
+}

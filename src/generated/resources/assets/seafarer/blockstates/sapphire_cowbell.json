@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "seafarer:block/sapphire_cowbell_bottom"
+    },
+    "half=upper": {
+      "model": "seafarer:block/sapphire_cowbell_top"
+    }
+  }
+}

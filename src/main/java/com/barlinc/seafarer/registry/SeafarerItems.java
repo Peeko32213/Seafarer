@@ -2,9 +2,11 @@ package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.items.SeafarerDrinkableItem;
-import com.barlinc.seafarer.items.*;
 import net.minecraft.core.Direction;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

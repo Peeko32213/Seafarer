@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seafarer:block/shelly_coraline_sand_0"
+      },
+      {
+        "model": "seafarer:block/shelly_coraline_sand_1"
+      },
+      {
+        "model": "seafarer:block/shelly_coraline_sand_2"
+      }
+    ]
+  }
+}

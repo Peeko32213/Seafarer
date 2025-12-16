@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_sea_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:green_sea_glass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:green_sea_glass_lamp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_green_sea_glass",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:green_sea_glass_lamp"
+    ]
+  },
+  "sends_telemetry_event": false
+}

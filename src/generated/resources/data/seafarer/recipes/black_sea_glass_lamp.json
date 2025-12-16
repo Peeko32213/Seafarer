@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "seafarer:black_sea_glass"
+    },
+    "X": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "item": "seafarer:black_sea_glass_lamp"
+  },
+  "show_notification": true
+}

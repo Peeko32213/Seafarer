@@ -1,9 +1,9 @@
 package com.barlinc.seafarer.worldgen.feature;
 
-import com.mojang.serialization.Codec;
 import com.barlinc.seafarer.blocks.GorgonianCoralBlock;
 import com.barlinc.seafarer.registry.SeafarerBlocks;
 import com.barlinc.seafarer.registry.tags.SeafarerBlockTags;
+import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;

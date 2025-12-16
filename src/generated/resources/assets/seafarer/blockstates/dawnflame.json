@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "seafarer:block/dawnflame_bottom"
+    },
+    "half=upper": {
+      "model": "seafarer:block/dawnflame_top"
+    }
+  }
+}

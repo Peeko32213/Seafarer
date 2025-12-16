@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:pyramid_shell_bricks"
+  },
+  "result": "seafarer:pyramid_shell_brick_stairs"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "seafarer:block/gray_netted_sea_glass_lamp_top",
+    "side": "seafarer:block/gray_netted_sea_glass_lamp"
+  }
+}

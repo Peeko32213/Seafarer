@@ -2,7 +2,6 @@ package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.blocks.*;
-import com.barlinc.seafarer.blocks.*;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;

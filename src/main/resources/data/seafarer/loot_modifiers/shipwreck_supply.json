@@ -6,5 +6,5 @@
       "loot_table_id": "minecraft:chests/shipwreck_supply"
     }
   ],
-  "loot_table": "seafarer:chests/soy_sauce"
+  "loot_table": "seafarer:chests/shipwreck_supply"
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lime_sea_glass_lamp": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:lime_sea_glass_lamp"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:lime_mosaic_sea_glass_lamp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_lime_sea_glass_lamp",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:lime_mosaic_sea_glass_lamp"
+    ]
+  },
+  "sends_telemetry_event": false
+}

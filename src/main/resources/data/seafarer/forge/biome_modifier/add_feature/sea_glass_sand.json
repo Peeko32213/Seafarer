@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "seafarer:glass_beach",
-  "features": "seafarer:disk_sea_glass_sand",
-  "step": "vegetal_decoration"
-}

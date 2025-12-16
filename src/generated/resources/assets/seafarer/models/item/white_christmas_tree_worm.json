@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "seafarer:item/white_christmas_tree_worm"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "seafarer:block/orange_sea_glass_brick_slab"
+    },
+    "type=double": {
+      "model": "seafarer:block/orange_sea_glass_bricks"
+    },
+    "type=top": {
+      "model": "seafarer:block/orange_sea_glass_brick_slab_top"
+    }
+  }
+}

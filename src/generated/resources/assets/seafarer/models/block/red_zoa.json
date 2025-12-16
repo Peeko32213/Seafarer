@@ -1,0 +1,6 @@
+{
+  "parent": "seafarer:block/zoa",
+  "textures": {
+    "zoa": "seafarer:block/red_zoa"
+  }
+}

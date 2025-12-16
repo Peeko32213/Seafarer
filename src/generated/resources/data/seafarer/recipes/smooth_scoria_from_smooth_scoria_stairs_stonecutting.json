@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:smooth_scoria"
+  },
+  "result": "seafarer:smooth_scoria_stairs"
+}

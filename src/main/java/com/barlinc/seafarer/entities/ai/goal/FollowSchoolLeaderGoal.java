@@ -1,7 +1,7 @@
 package com.barlinc.seafarer.entities.ai.goal;
 
-import com.mojang.datafixers.DataFixUtils;
 import com.barlinc.seafarer.entities.base.SchoolingFishMob;
+import com.mojang.datafixers.DataFixUtils;
 import net.minecraft.world.entity.ai.goal.Goal;
 
 import java.util.List;

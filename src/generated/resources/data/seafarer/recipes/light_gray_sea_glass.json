@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "seafarer:light_gray_pebbled_sea_glass"
+  },
+  "result": "seafarer:light_gray_sea_glass"
+}

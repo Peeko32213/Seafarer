@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fiery_duster": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:fiery_duster"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:orange_dye_from_fiery_duster"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fiery_duster",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:orange_dye_from_fiery_duster"
+    ]
+  },
+  "sends_telemetry_event": false
+}

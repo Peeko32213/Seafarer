@@ -1,7 +1,7 @@
 package com.barlinc.seafarer.mixins;
 
 import com.barlinc.seafarer.mixins.accessor.NoiseGeneratorSettingsAccessor;
-import com.barlinc.seafarer.worldgen.biome.SeafarerSurfaceRules;
+import com.barlinc.seafarer.registry.SeafarerSurfaceRules;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.MinecraftServer;

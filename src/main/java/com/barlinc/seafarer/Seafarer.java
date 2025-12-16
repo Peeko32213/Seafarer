@@ -3,6 +3,8 @@ package com.barlinc.seafarer;
 import com.barlinc.seafarer.datagen.*;
 import com.barlinc.seafarer.events.ClientEvents;
 import com.barlinc.seafarer.registry.*;
+import com.barlinc.seafarer.utils.ClientProxy;
+import com.barlinc.seafarer.utils.CommonProxy;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -15,9 +17,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.RegistryObject;
@@ -29,16 +30,15 @@ import java.util.concurrent.CompletableFuture;
 public class Seafarer {
 
     public static final String MOD_ID = "seafarer";
+    public static CommonProxy PROXY = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> CommonProxy::new);
 
     public Seafarer() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModLoadingContext context = ModLoadingContext.get();
 
+        bus.addListener(this::clientSetup);
         bus.addListener(this::commonSetup);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> bus.addListener(ClientEvents::init));
         bus.addListener(this::dataSetup);
-
-        context.registerConfig(ModConfig.Type.COMMON, SeafarerConfig.COMMON_CONFIG);
 
         SeafarerItems.ITEMS.register(bus);
         SeafarerBlocks.BLOCKS.register(bus);
@@ -53,11 +53,13 @@ public class Seafarer {
         SeafarerParticles.PARTICLE_TYPES.register(bus);
         SeafarerPaintings.PAINTING_VARIANTS.register(bus);
 
+        PROXY.init();
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            PROXY.commonSetup();
             addToComposter(SeafarerBlocks.COASTAL_LAVENDER, 0.7F);
             addToComposter(SeafarerBlocks.COASTAL_WILDFLOWER, 0.3F);
             addToComposter(SeafarerBlocks.SEA_THRIFT, 0.5F);
@@ -66,21 +68,20 @@ public class Seafarer {
             addToComposter(SeafarerBlocks.SILK_LILIES, 0.6F);
             addToComposter(SeafarerBlocks.TWILIGHT_BLADE, 0.6F);
             addToComposter(SeafarerBlocks.DAWNFLAME, 0.7F);
-
         });
     }
 
-    private void dataSetup(GatherDataEvent event) {
-        DataGenerator generator = event.getGenerator();
+    public void clientSetup(FMLClientSetupEvent event) {
+        event.enqueueWork(() -> PROXY.clientSetup());
+    }
+
+    private void dataSetup(GatherDataEvent data) {
+        DataGenerator generator = data.getGenerator();
         PackOutput output = generator.getPackOutput();
-        CompletableFuture<HolderLookup.Provider> provider = event.getLookupProvider();
-        ExistingFileHelper helper = event.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> provider = data.getLookupProvider();
+        ExistingFileHelper helper = data.getExistingFileHelper();
 
-        boolean server = event.includeServer();
-
-        SeafarerDatapackProvider datapackEntries = new SeafarerDatapackProvider(output, provider);
-        generator.addProvider(server, datapackEntries);
-        provider = datapackEntries.getRegistryProvider();
+        boolean server = data.includeServer();
 
         SeafarerBlockTagProvider blockTags = new SeafarerBlockTagProvider(output, provider, helper);
         generator.addProvider(server, blockTags);
@@ -91,11 +92,11 @@ public class Seafarer {
         generator.addProvider(server, new SeafarerRecipeProvider(output));
         generator.addProvider(server, new SeafarerLootTableProvider(output));
 
-        boolean client = event.includeClient();
+        boolean client = data.includeClient();
 
-        generator.addProvider(client, new SeafarerBlockstateProvider(output, helper));
-        generator.addProvider(client, new SeafarerItemModelProvider(output, helper));
-        generator.addProvider(client, new SeafarerLanguageProvider(output));
+        generator.addProvider(client, new SeafarerBlockstateProvider(data));
+        generator.addProvider(client, new SeafarerItemModelProvider(data));
+        generator.addProvider(client, new SeafarerLanguageProvider(data));
         generator.addProvider(client, new SeafarerSoundDefinitionsProvider(output, helper));
     }
 

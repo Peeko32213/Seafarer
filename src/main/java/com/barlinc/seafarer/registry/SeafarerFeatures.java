@@ -2,10 +2,11 @@ package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.worldgen.feature.*;
-import com.barlinc.seafarer.worldgen.feature.*;
 import com.barlinc.seafarer.worldgen.feature.config.LargeLakeFeatureConfig;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.*;
+import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;

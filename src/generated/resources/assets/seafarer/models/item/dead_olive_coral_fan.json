@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "seafarer:block/dead_olive_coral_fan"
+  }
+}

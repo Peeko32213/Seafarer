@@ -1,0 +1,6 @@
+{
+  "parent": "seafarer:block/starfish",
+  "textures": {
+    "starfish": "seafarer:block/plumeria_starfish_1"
+  }
+}

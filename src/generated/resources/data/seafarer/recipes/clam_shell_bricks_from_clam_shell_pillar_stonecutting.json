@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:clam_shell_bricks"
+  },
+  "result": "seafarer:clam_shell_pillar"
+}

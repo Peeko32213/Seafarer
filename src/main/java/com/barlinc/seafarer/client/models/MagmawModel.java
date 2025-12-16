@@ -1,7 +1,7 @@
 package com.barlinc.seafarer.client.models;
 
-import com.barlinc.seafarer.client.models.base.SeafarerModel;
 import com.barlinc.seafarer.client.animations.MagmawAnimations;
+import com.barlinc.seafarer.client.models.base.SeafarerModel;
 import com.barlinc.seafarer.entities.Magmaw;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;

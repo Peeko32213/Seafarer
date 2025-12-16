@@ -1,6 +1,6 @@
 {
   "replace": false,
   "entries": [
-    "seafarer:inject_shipwreck_supply_soy_sauce"
+    "seafarer:shipwreck_supply"
   ]
 }

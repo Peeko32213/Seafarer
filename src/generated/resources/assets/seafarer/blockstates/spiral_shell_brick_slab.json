@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "seafarer:block/spiral_shell_brick_slab"
+    },
+    "type=double": {
+      "model": "seafarer:block/spiral_shell_bricks"
+    },
+    "type=top": {
+      "model": "seafarer:block/spiral_shell_brick_slab_top"
+    }
+  }
+}

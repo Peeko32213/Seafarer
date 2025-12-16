@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seafarer:block/sea_glass_sand_0"
+      },
+      {
+        "model": "seafarer:block/sea_glass_sand_1"
+      },
+      {
+        "model": "seafarer:block/sea_glass_sand_2"
+      },
+      {
+        "model": "seafarer:block/sea_glass_sand_3"
+      }
+    ]
+  }
+}

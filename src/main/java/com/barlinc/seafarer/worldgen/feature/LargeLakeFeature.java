@@ -1,7 +1,7 @@
 package com.barlinc.seafarer.worldgen.feature;
 
-import com.mojang.serialization.Codec;
 import com.barlinc.seafarer.worldgen.feature.config.LargeLakeFeatureConfig;
+import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.FluidTags;

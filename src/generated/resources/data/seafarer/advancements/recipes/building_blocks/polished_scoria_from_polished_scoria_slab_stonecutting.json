@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_scoria": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:polished_scoria"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:polished_scoria_from_polished_scoria_slab_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_scoria",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:polished_scoria_from_polished_scoria_slab_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

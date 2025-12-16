@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:orange_dye_from_widowbloom"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_widowbloom": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:widowbloom"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_widowbloom",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:orange_dye_from_widowbloom"
+    ]
+  },
+  "sends_telemetry_event": false
+}

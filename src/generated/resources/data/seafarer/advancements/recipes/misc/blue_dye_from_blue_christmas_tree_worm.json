@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_christmas_tree_worm": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:blue_christmas_tree_worm"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:blue_dye_from_blue_christmas_tree_worm"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_blue_christmas_tree_worm",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:blue_dye_from_blue_christmas_tree_worm"
+    ]
+  },
+  "sends_telemetry_event": false
+}

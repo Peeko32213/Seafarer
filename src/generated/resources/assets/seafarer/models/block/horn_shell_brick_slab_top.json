@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "seafarer:block/horn_shell_bricks",
+    "side": "seafarer:block/horn_shell_bricks",
+    "top": "seafarer:block/horn_shell_bricks"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "seafarer:white_sea_glass_bricks_from_white_sea_glass_brick_stairs_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_sea_glass_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "seafarer:white_sea_glass_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_sea_glass_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "seafarer:white_sea_glass_bricks_from_white_sea_glass_brick_stairs_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

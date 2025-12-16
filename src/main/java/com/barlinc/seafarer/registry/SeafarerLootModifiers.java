@@ -1,9 +1,9 @@
 package com.barlinc.seafarer.registry;
 
-import com.mojang.serialization.Codec;
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.loot.modifier.AddItemModifier;
 import com.barlinc.seafarer.loot.modifier.AddLootTableModifier;
+import com.mojang.serialization.Codec;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

@@ -1,8 +1,7 @@
 package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
-import com.barlinc.seafarer.entities.*;
-import com.barlinc.seafarer.entities.*;
+import com.barlinc.seafarer.entities.Magmaw;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

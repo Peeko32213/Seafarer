@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "seafarer:fishing_net"
+    },
+    "X": {
+      "item": "seafarer:light_blue_sea_glass_lamp"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "seafarer:light_blue_netted_sea_glass_lamp"
+  },
+  "show_notification": true
+}

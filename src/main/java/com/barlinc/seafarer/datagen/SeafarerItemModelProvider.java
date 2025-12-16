@@ -3,21 +3,19 @@ package com.barlinc.seafarer.datagen;
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.registry.SeafarerItems;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class SeafarerItemModelProvider extends ItemModelProvider {
 
-    public SeafarerItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, Seafarer.MOD_ID, existingFileHelper);
+    public SeafarerItemModelProvider(GatherDataEvent event) {
+        super(event.getGenerator().getPackOutput(), Seafarer.MOD_ID, event.getExistingFileHelper());
     }
 
     @Override
@@ -37,34 +35,18 @@ public class SeafarerItemModelProvider extends ItemModelProvider {
         this.item(SeafarerItems.SOY_SAUCE);
     }
 
-    private void toBlock(RegistryObject<Block> b) {
-        toBlockModel(b, b.getId().getPath());
+
+    // item
+    private ItemModelBuilder item(RegistryObject<?> item) {
+        return generated(item.getId().getPath(), modLoc("item/" + item.getId().getPath()));
     }
 
-    private void toBlockModel(RegistryObject<Block> b, String model) {
-        toBlockModel(b, prefix("block/" + model));
-    }
-
-    private void toBlockModel(RegistryObject<Block> b, ResourceLocation model) {
-        withExistingParent(b.getId().getPath(), model);
-    }
-
-    private ItemModelBuilder item(RegistryObject<Item> item) {
-        return generated(item.getId().getPath(), prefix("item/" + item.getId().getPath()));
-    }
-
+    // utils
     private ItemModelBuilder generated(String name, ResourceLocation... layers) {
         ItemModelBuilder builder = withExistingParent(name, "item/generated");
         for (int i = 0; i < layers.length; i++) {
             builder = builder.texture("layer" + i, layers[i]);
         }
         return builder;
-    }
-
-    public static ResourceLocation prefix(String name){
-        return new ResourceLocation(Seafarer.MOD_ID, name);
-    }
-    public static ResourceLocation key(Item item) {
-        return BuiltInRegistries.ITEM.getKey(item);
     }
 }

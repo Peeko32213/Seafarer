@@ -1,14 +1,13 @@
 package com.barlinc.seafarer.datagen;
 
-import com.barlinc.seafarer.SeafarerTab;
 import com.barlinc.seafarer.Seafarer;
+import com.barlinc.seafarer.SeafarerTab;
 import com.barlinc.seafarer.registry.SeafarerBlocks;
 import com.barlinc.seafarer.registry.SeafarerItems;
 import com.barlinc.seafarer.registry.SeafarerPaintings;
 import com.barlinc.seafarer.registry.SeafarerSoundEvents;
-import com.barlinc.seafarer.registry.worldgen.SeafarerBiomes;
+import com.barlinc.seafarer.registry.SeafarerBiomes;
 import com.barlinc.seafarer.utils.SeafarerTextUtils;
-import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +17,7 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.LanguageProvider;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
@@ -26,8 +26,8 @@ import java.util.function.Supplier;
 
 public class SeafarerLanguageProvider extends LanguageProvider {
 
-    public SeafarerLanguageProvider(PackOutput output) {
-        super(output, Seafarer.MOD_ID, "en_us");
+    public SeafarerLanguageProvider(GatherDataEvent event) {
+        super(event.getGenerator().getPackOutput(), Seafarer.MOD_ID, "en_us");
     }
 
     @Override
@@ -38,9 +38,7 @@ public class SeafarerLanguageProvider extends LanguageProvider {
         SeafarerItems.ITEM_TRANSLATIONS.forEach(this::forItems);
         SeafarerPaintings.PAINTING_TRANSLATIONS.forEach(this::translatePainting);
 
-        this.translateBiome(SeafarerBiomes.FLOWERING_BEACH);
         this.translateBiome(SeafarerBiomes.VOLCANIC_ISLAND);
-        this.translateBiome(SeafarerBiomes.GLASS_BEACH);
 
         this.translateSound(SeafarerSoundEvents.FISH_IDLE, "Fish gurgles");
         this.translateSound(SeafarerSoundEvents.FISH_DEATH, "Fish dies");

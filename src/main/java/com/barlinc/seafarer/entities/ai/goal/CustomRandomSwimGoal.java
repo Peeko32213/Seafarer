@@ -1,8 +1,8 @@
 package com.barlinc.seafarer.entities.ai.goal;
 
 import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;

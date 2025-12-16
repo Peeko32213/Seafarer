@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "seafarer:coraline_sandstone"
+  },
+  "result": "seafarer:coraline_sandstone_stairs"
+}

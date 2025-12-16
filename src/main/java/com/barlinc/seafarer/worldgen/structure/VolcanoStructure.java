@@ -1,8 +1,8 @@
 package com.barlinc.seafarer.worldgen.structure;
 
+import com.barlinc.seafarer.registry.SeafarerStructureTypes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.barlinc.seafarer.registry.SeafarerStructureTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.world.level.ChunkPos;

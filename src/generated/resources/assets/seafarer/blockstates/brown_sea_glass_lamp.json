@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "seafarer:block/brown_sea_glass_lamp",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "seafarer:block/brown_sea_glass_lamp",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "seafarer:block/brown_sea_glass_lamp",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "seafarer:block/brown_sea_glass_lamp",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "seafarer:block/brown_sea_glass_lamp"
+    },
+    "facing=west": {
+      "model": "seafarer:block/brown_sea_glass_lamp",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

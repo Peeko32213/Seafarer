@@ -1,13 +1,10 @@
 package com.barlinc.seafarer.events;
 
 import com.barlinc.seafarer.Seafarer;
-import com.barlinc.seafarer.client.models.*;
-import com.barlinc.seafarer.client.renderer.*;
-import com.barlinc.seafarer.registry.*;
-import com.barlinc.seafarer.client.models.*;
+import com.barlinc.seafarer.client.models.MagmawModel;
 import com.barlinc.seafarer.client.particles.VolcanicSmokeParticle;
+import com.barlinc.seafarer.client.renderer.MagmawRenderer;
 import com.barlinc.seafarer.registry.*;
-import com.barlinc.seafarer.client.renderer.*;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.FoliageColor;

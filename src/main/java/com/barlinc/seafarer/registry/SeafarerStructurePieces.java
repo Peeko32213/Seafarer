@@ -2,7 +2,6 @@ package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.worldgen.structure.VolcanoStructurePiece;
-import com.barlinc.seafarer.worldgen.structure.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.structure.pieces.StructurePieceType;
 import net.minecraftforge.registries.DeferredRegister;

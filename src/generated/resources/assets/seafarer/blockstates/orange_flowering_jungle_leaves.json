@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "seafarer:block/orange_flowering_jungle_leaves_0"
+      },
+      {
+        "model": "seafarer:block/orange_flowering_jungle_leaves_1"
+      }
+    ]
+  }
+}

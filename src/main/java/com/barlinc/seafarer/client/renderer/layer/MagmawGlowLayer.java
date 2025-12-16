@@ -1,10 +1,10 @@
 package com.barlinc.seafarer.client.renderer.layer;
 
 import com.barlinc.seafarer.Seafarer;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.barlinc.seafarer.client.models.MagmawModel;
 import com.barlinc.seafarer.entities.Magmaw;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.RenderLayerParent;

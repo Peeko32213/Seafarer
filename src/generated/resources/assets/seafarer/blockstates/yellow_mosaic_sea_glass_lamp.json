@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "seafarer:block/yellow_mosaic_sea_glass_lamp_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "seafarer:block/yellow_mosaic_sea_glass_lamp"
+    },
+    "axis=z": {
+      "model": "seafarer:block/yellow_mosaic_sea_glass_lamp_horizontal",
+      "x": 90
+    }
+  }
+}

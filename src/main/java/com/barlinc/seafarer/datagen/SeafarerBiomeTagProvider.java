@@ -2,7 +2,7 @@ package com.barlinc.seafarer.datagen;
 
 import com.barlinc.seafarer.Seafarer;
 import com.barlinc.seafarer.registry.tags.SeafarerBiomeTags;
-import com.barlinc.seafarer.registry.worldgen.SeafarerBiomes;
+import com.barlinc.seafarer.registry.SeafarerBiomes;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.BiomeTagsProvider;
@@ -28,9 +28,7 @@ public class SeafarerBiomeTagProvider extends BiomeTagsProvider {
         this.tag(SeafarerBiomeTags.HAS_VOLCANOES).add(SeafarerBiomes.VOLCANIC_ISLAND);
 
         this.tag(BiomeTags.IS_OVERWORLD).add(
-                SeafarerBiomes.VOLCANIC_ISLAND,
-                SeafarerBiomes.FLOWERING_BEACH,
-                SeafarerBiomes.GLASS_BEACH
+                SeafarerBiomes.VOLCANIC_ISLAND
         );
     }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "X": {
+      "item": "seafarer:lime_sea_glass_lamp"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "seafarer:lime_mosaic_sea_glass_lamp"
+  },
+  "show_notification": true
+}
