@@ -1,6 +1,4 @@
 {
-  "biome.seafarer.flowering_beach": "Flowering Beach",
-  "biome.seafarer.glass_beach": "Glass Beach",
   "biome.seafarer.volcanic_island": "Volcanic Island",
   "block.seafarer.amber_coral": "Amber Coral",
   "block.seafarer.amber_coral_block": "Amber Coral Block",
@@ -328,6 +326,7 @@
   "block.seafarer.yellow_sea_glass_lamp": "Yellow Sea Glass Lamp",
   "block.seafarer.yellow_sea_glass_pane": "Yellow Sea Glass Pane",
   "block.seafarer.yellow_volcanic_grass": "Yellow Volcanic Grass",
+  "entity.seafarer.magmaw": "Magmaw",
   "item.seafarer.dried_starfish": "Dried Starfish",
   "item.seafarer.magmaw_spawn_egg": "Magmaw Spawn Egg",
   "item.seafarer.sea_glass_pebbles": "Sea Glass Pebbles",

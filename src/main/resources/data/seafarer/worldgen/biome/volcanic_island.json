@@ -187,12 +187,6 @@
     ],
     "water_ambient": [
       {
-        "type": "seafarer:snake_mackerel",
-        "maxCount": 2,
-        "minCount": 2,
-        "weight": 10
-      },
-      {
         "type": "minecraft:pufferfish",
         "maxCount": 3,
         "minCount": 1,

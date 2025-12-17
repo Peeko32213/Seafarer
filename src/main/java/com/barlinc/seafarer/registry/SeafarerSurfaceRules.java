@@ -15,7 +15,7 @@ public class SeafarerSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
     private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
 
-    private static SurfaceRules.RuleSource getVolcanicIslandRuleSource() {
+    public static SurfaceRules.RuleSource getVolcanicIslandRuleSource() {
         SurfaceRules.RuleSource volcanic_island = SurfaceRules.ifTrue(
                 SurfaceRules.isBiome(SeafarerBiomes.VOLCANIC_ISLAND),
                 SurfaceRules.sequence(
@@ -24,10 +24,6 @@ public class SeafarerSurfaceRules {
                         SurfaceRules.ifTrue(UNDER_FLOOR, DIRT)
                 ));
         return SurfaceRules.ifTrue(SurfaceRules.isBiome(SeafarerBiomes.VOLCANIC_ISLAND), volcanic_island);
-    }
-
-    public static SurfaceRules.RuleSource makeRules() {
-        return SurfaceRules.sequence(getVolcanicIslandRuleSource());
     }
 
     private static RuleSource beachSandRuleSource(RuleSource sand, RuleSource sandstone) {

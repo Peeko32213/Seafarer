@@ -83,6 +83,10 @@ public class Seafarer {
 
         boolean server = data.includeServer();
 
+        SeafarerDatapackProvider datapackEntries = new SeafarerDatapackProvider(output, provider);
+        generator.addProvider(server, datapackEntries);
+        provider = datapackEntries.getRegistryProvider();
+
         SeafarerBlockTagProvider blockTags = new SeafarerBlockTagProvider(output, provider, helper);
         generator.addProvider(server, blockTags);
         generator.addProvider(server, new SeafarerItemTagProvider(output, provider, blockTags.contentsGetter(), helper));
@@ -91,6 +95,7 @@ public class Seafarer {
         generator.addProvider(server, new SeafarerPaintingTagProvider(output, provider, helper));
         generator.addProvider(server, new SeafarerRecipeProvider(output));
         generator.addProvider(server, new SeafarerLootTableProvider(output));
+        generator.addProvider(server, new SeafarerChunkGeneratorModifierProvider(output, provider));
 
         boolean client = data.includeClient();
 

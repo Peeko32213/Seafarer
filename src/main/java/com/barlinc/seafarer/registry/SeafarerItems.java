@@ -27,7 +27,7 @@ public class SeafarerItems {
     public static final RegistryObject<Item> SEA_GLASS_PEBBLES = registerItem("sea_glass_pebbles", () -> new Item(new Item.Properties()));
 
     // magmaw
-    public static final RegistryObject<Item> MAGMAW_SPAWN_EGG = registerSpawnEgg("magmaw", SeafarerEntities.MAGMAW , 0x131613, 0xbd7f0d);
+    public static final RegistryObject<Item> MAGMAW_SPAWN_EGG = registerSpawnEgg("magmaw", SeafarerEntities.MAGMAW , 0x1f1e18, 0xded255);
 
     public static final RegistryObject<Item> DRIED_STARFISH = registerItem("dried_starfish", () -> new Item(new Item.Properties().food(SeafarerFoodValues.COOKED_STARFISH)));
 

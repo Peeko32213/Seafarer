@@ -9,16 +9,8 @@ import javax.annotation.Nullable;
 
 public class LavaOrWaterRandomSwimGoal extends RandomStrollGoal {
 
-    private Vec3 wantedPos;
-    private final int radius;
-    private final int height;
-    private final int proximity;
-
-    public LavaOrWaterRandomSwimGoal(PathfinderMob mob, double speedMultiplier, int interval, int radius, int height, int proximity) {
+    public LavaOrWaterRandomSwimGoal(PathfinderMob mob, double speedMultiplier, int interval) {
         super(mob, speedMultiplier, interval);
-        this.radius = radius;
-        this.height = height;
-        this.proximity = proximity;
     }
 
     @Override
@@ -46,8 +38,7 @@ public class LavaOrWaterRandomSwimGoal extends RandomStrollGoal {
 
     @Override
     public boolean canContinueToUse() {
-        wantedPos = new Vec3(this.wantedX, this.wantedY, this.wantedZ);
-        return super.canContinueToUse() && !(this.wantedPos.distanceTo(this.mob.position()) <= this.mob.getBbWidth() * proximity) && (this.mob.isInWater() || this.mob.isInLava());
+        return super.canContinueToUse() && (this.mob.isInWater() || this.mob.isInLava());
     }
 
     @Nullable

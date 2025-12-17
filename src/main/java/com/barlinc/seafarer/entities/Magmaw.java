@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 public class Magmaw extends Monster {
 
     public final AnimationState flopAnimationState = new AnimationState();
-    public final AnimationState swimmingAnimationState = new AnimationState();
+    public final AnimationState swimIdleAnimationState = new AnimationState();
 
     public Magmaw(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
@@ -34,13 +34,13 @@ public class Magmaw extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 16.0D)
+                .add(Attributes.MAX_HEALTH, 24.0D)
                 .add(Attributes.MOVEMENT_SPEED, 1.0F);
     }
 
     @Override
     protected void registerGoals() {
-        this.goalSelector.addGoal(0, new LavaOrWaterRandomSwimGoal(this, 1.0D, 10, 20, 20, 3));
+        this.goalSelector.addGoal(0, new LavaOrWaterRandomSwimGoal(this, 1.0D, 40));
     }
 
     @Override
@@ -49,14 +49,14 @@ public class Magmaw extends Monster {
     }
 
     @Override
-    public void travel(@NotNull Vec3 travelVector) {
+    public void travel(@NotNull Vec3 travelVec) {
         boolean inLiquid = this.isInLava() || this.isInWater();
         if (this.isEffectiveAi() && inLiquid) {
-            this.moveRelative(this.getSpeed(), travelVector);
+            this.moveRelative(this.getSpeed(), travelVec);
             this.move(MoverType.SELF, this.getDeltaMovement());
             this.setDeltaMovement(this.getDeltaMovement().scale(0.9D));
         } else {
-            super.travel(travelVector);
+            super.travel(travelVec);
         }
     }
 
@@ -69,7 +69,7 @@ public class Magmaw extends Monster {
 
     private void setupAnimationStates() {
         this.flopAnimationState.animateWhen(!this.isInWaterOrBubble() && !this.isInLava(), this.tickCount);
-        this.swimmingAnimationState.animateWhen(this.isInWaterOrBubble() || this.isInLava(), this.tickCount);
+        this.swimIdleAnimationState.animateWhen(this.isInWaterOrBubble() || this.isInLava(), this.tickCount);
     }
 
     @Override

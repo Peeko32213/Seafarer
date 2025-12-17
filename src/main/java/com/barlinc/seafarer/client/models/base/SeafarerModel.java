@@ -18,17 +18,32 @@ public abstract class SeafarerModel<E extends Entity> extends HierarchicalModel<
 
     private static final Vector3f ANIMATION_VECTOR_CACHE = new Vector3f();
 
+    protected final float youngScaleFactor;
+    protected final float bodyYOffset;
+
     public SeafarerModel() {
-        this(RenderType::entityCutoutNoCull);
+        this(1, 0, RenderType::entityCutoutNoCull);
     }
 
-    public SeafarerModel(Function<ResourceLocation, RenderType> renderType) {
+    public SeafarerModel(float youngScaleFactor, float youngBodyYoffset) {
+        this(youngScaleFactor, youngBodyYoffset, RenderType::entityCutoutNoCull);
+    }
+
+    public SeafarerModel(float youngScaleFactor, float youngBodyYoffset, Function<ResourceLocation, RenderType> renderType) {
         super(renderType);
+        this.bodyYOffset = youngBodyYoffset;
+        this.youngScaleFactor = youngScaleFactor;
     }
 
     @Override
-    public void renderToBuffer(@NotNull PoseStack poseStack, @NotNull VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+    public void renderToBuffer(PoseStack poseStack, @NotNull VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+        poseStack.pushPose();
+        if (this.young) {
+            poseStack.scale(this.youngScaleFactor, this.youngScaleFactor, this.youngScaleFactor);
+            poseStack.translate(0.0F, this.bodyYOffset / 16.0F, 0.0F);
+        }
         this.root().render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+        poseStack.popPose();
     }
 
     protected void animateIdle(AnimationState animationState, AnimationDefinition definition, float ageInTicks, float speed, float limbSwingAmount) {

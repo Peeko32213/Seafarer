@@ -80,6 +80,9 @@ repositories {
         name "JEI maven"
         url "https://maven.blamejared.com/"
     }
+    maven {
+        url "https://maven.teamabnormals.com"
+    }
     flatDir {
         dirs 'libs'
     }
@@ -96,18 +99,16 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     implementation fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
 
-    compileOnly fg.deobf("curse.maven:terrablender-563928:5378180")
-    implementation fg.deobf("curse.maven:terrablender-563928:5378180")
+    implementation fg.deobf("com.teamabnormals:blueprint:${mc_version}-${blueprint_version}")
 
-//    runtimeOnly fg.deobf("curse.maven:jade-324717:6855440")
-//    runtimeOnly fg.deobf("curse.maven:cyanide-541676:5778405")
-//    runtimeOnly fg.deobf("curse.maven:appleskin-248787:4770828")
-//    runtimeOnly fg.deobf("curse.maven:commandstructures-565119:4711641")
-//    runtimeOnly fg.deobf("curse.maven:structure-void-toggle-357304:4727098")
-//    runtimeOnly fg.deobf("curse.maven:worldedit-225608:4586218")
-//    runtimeOnly fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:6172935")
-//    runtimeOnly fg.deobf("curse.maven:better-advancements-272515:5454907")
-//    runtimeOnly fg.deobf("curse.maven:patchouli-306770:6164575")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:6855440")
+    runtimeOnly fg.deobf("curse.maven:cyanide-541676:5778405")
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:4770828")
+    runtimeOnly fg.deobf("curse.maven:commandstructures-565119:4711641")
+    runtimeOnly fg.deobf("curse.maven:structure-void-toggle-357304:4727098")
+    runtimeOnly fg.deobf("curse.maven:worldedit-225608:4586218")
+    runtimeOnly fg.deobf("curse.maven:just-enough-effect-descriptions-jeed-532286:6172935")
+    runtimeOnly fg.deobf("curse.maven:better-advancements-272515:5454907")
 }
 
 mixin {

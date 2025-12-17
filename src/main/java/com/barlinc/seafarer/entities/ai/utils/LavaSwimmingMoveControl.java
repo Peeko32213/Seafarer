@@ -60,7 +60,7 @@ public class LavaSwimmingMoveControl extends MoveControl {
         }
     }
 
-    private static float getTurningSpeedFactor(float p_249853_) {
-        return 1.0F - Mth.clamp((p_249853_ - 10.0F) / 50.0F, 0.0F, 1.0F);
+    private static float getTurningSpeedFactor(float v) {
+        return 1.0F - Mth.clamp((v - 10.0F) / 50.0F, 0.0F, 1.0F);
     }
 }
