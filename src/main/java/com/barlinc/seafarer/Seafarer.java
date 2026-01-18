@@ -95,7 +95,7 @@ public class Seafarer {
         generator.addProvider(server, new SeafarerPaintingTagProvider(output, provider, helper));
         generator.addProvider(server, new SeafarerRecipeProvider(output));
         generator.addProvider(server, new SeafarerLootTableProvider(output));
-        generator.addProvider(server, new SeafarerChunkGeneratorModifierProvider(output, provider));
+//        generator.addProvider(server, new SeafarerChunkGeneratorModifierProvider(output, provider));
 
         boolean client = data.includeClient();
 

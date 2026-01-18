@@ -229,8 +229,6 @@ public class SeafarerBlocks {
     public static final RegistryObject<Block> COASTAL_WILDFLOWER = registerBlock("coastal_wildflower", () -> new SeafarerFlowerBlock(() -> MobEffects.DIG_SPEED, 9, SeafarerBlockProperties.flower(MapColor.TERRACOTTA_YELLOW)));
     public static final RegistryObject<Block> POTTED_COASTAL_WILDFLOWER = registerBlockWithoutItem("potted_coastal_wildflower", () -> new FlowerPotBlock(SeafarerBlocks.COASTAL_WILDFLOWER.get(), registerFlowerPot()));
 
-    public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.XYLOPHONE).requiresCorrectToolForDrops().strength(1.0F).sound(SoundType.BONE_BLOCK)));
-
     public static final RegistryObject<Block> CLAM_SHELL = registerBlock("clam_shell", () -> new ShellBlock(BlockBehaviour.Properties.of().instabreak().sound(SoundType.STONE).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> HORN_SHELL = registerBlock("horn_shell", () -> new ShellBlock(BlockBehaviour.Properties.of().instabreak().sound(SoundType.STONE).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> SPIKY_SHELL = registerBlock("spiky_shell", () -> new ShellBlock(BlockBehaviour.Properties.of().instabreak().sound(SoundType.STONE).noOcclusion().pushReaction(PushReaction.DESTROY)));

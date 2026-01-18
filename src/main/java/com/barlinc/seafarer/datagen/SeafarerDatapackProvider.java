@@ -12,8 +12,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class SeafarerDatapackProvider extends DatapackBuiltinEntriesProvider {
 
-	public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-			.add(BlueprintDataPackRegistries.MODDED_BIOME_SLICES, SeafarerBiomeSliceProvider::bootstrap);
+	public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder();
+//			.add(BlueprintDataPackRegistries.MODDED_BIOME_SLICES, SeafarerBiomeSliceProvider::bootstrap);
 
 	public SeafarerDatapackProvider(PackOutput output, CompletableFuture<Provider> provider) {
 		super(output, provider, BUILDER, Set.of(Seafarer.MOD_ID));

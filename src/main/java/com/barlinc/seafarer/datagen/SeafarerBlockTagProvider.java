@@ -24,18 +24,18 @@ public class SeafarerBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
 
         this.tag(BlockTags.CORAL_PLANTS).add(
-                AMBER_CORAL.get(),
-                CERULEAN_CORAL.get(),
-                MAROON_CORAL.get(),
-                OLIVE_CORAL.get(),
-                TURQUOISE_CORAL.get(),
-                VERDANT_CORAL.get(),
-                AMBER_CORAL_FAN.get(),
-                CERULEAN_CORAL_FAN.get(),
-                MAROON_CORAL_FAN.get(),
-                OLIVE_CORAL_FAN.get(),
-                TURQUOISE_CORAL_FAN.get(),
-                VERDANT_CORAL_FAN.get(),
+//                AMBER_CORAL.get(),
+//                CERULEAN_CORAL.get(),
+//                MAROON_CORAL.get(),
+//                OLIVE_CORAL.get(),
+//                TURQUOISE_CORAL.get(),
+//                VERDANT_CORAL.get(),
+//                AMBER_CORAL_FAN.get(),
+//                CERULEAN_CORAL_FAN.get(),
+//                MAROON_CORAL_FAN.get(),
+//                OLIVE_CORAL_FAN.get(),
+//                TURQUOISE_CORAL_FAN.get(),
+//                VERDANT_CORAL_FAN.get(),
                 CYAN_ZOA.get(),
                 ORANGE_ZOA.get(),
                 PURPLE_ZOA.get(),
@@ -47,23 +47,23 @@ public class SeafarerBlockTagProvider extends BlockTagsProvider {
                 RED_CHRISTMAS_TREE_WORM.get()
         );
 
-        this.tag(BlockTags.CORAL_BLOCKS).add(
-                AMBER_CORAL_BLOCK.get(),
-                CERULEAN_CORAL_BLOCK.get(),
-                MAROON_CORAL_BLOCK.get(),
-                OLIVE_CORAL_BLOCK.get(),
-                TURQUOISE_CORAL_BLOCK.get(),
-                VERDANT_CORAL_BLOCK.get()
-        );
-
-        this.tag(BlockTags.WALL_CORALS).add(
-                AMBER_CORAL_WALL_FAN.get(),
-                CERULEAN_CORAL_WALL_FAN.get(),
-                MAROON_CORAL_WALL_FAN.get(),
-                OLIVE_CORAL_WALL_FAN.get(),
-                TURQUOISE_CORAL_WALL_FAN.get(),
-                VERDANT_CORAL_WALL_FAN.get()
-        );
+//        this.tag(BlockTags.CORAL_BLOCKS).add(
+//                AMBER_CORAL_BLOCK.get(),
+//                CERULEAN_CORAL_BLOCK.get(),
+//                MAROON_CORAL_BLOCK.get(),
+//                OLIVE_CORAL_BLOCK.get(),
+//                TURQUOISE_CORAL_BLOCK.get(),
+//                VERDANT_CORAL_BLOCK.get()
+//        );
+//
+//        this.tag(BlockTags.WALL_CORALS).add(
+//                AMBER_CORAL_WALL_FAN.get(),
+//                CERULEAN_CORAL_WALL_FAN.get(),
+//                MAROON_CORAL_WALL_FAN.get(),
+//                OLIVE_CORAL_WALL_FAN.get(),
+//                TURQUOISE_CORAL_WALL_FAN.get(),
+//                VERDANT_CORAL_WALL_FAN.get()
+//        );
 
         this.tag(SeafarerBlockTags.GORGONIANS).add(
                 TOWERING_GORGONIAN.get(),
@@ -81,12 +81,12 @@ public class SeafarerBlockTagProvider extends BlockTagsProvider {
         );
 
         this.tag(BlockTags.SAND).add(
-                VOLCANIC_SAND.get(),
-                SHELLY_VOLCANIC_SAND.get(),
-                STARRY_VOLCANIC_SAND.get(),
-                CORALINE_SAND.get(),
-                SHELLY_CORALINE_SAND.get(),
-                STARRY_CORALINE_SAND.get(),
+//                VOLCANIC_SAND.get(),
+//                SHELLY_VOLCANIC_SAND.get(),
+//                STARRY_VOLCANIC_SAND.get(),
+//                CORALINE_SAND.get(),
+//                SHELLY_CORALINE_SAND.get(),
+//                STARRY_CORALINE_SAND.get(),
                 SHELLY_SAND.get(),
                 STARRY_SAND.get()
         );

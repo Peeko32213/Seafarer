@@ -38,20 +38,23 @@ public class SeafarerTab {
                         output.accept(SeafarerBlocks.SEA_HOLLY.get());
                         output.accept(SeafarerBlocks.COASTAL_LAVENDER.get());
                         output.accept(SeafarerBlocks.COASTAL_WILDFLOWER.get());
-                        output.accept(SeafarerBlocks.FIERY_DUSTER.get());
-                        output.accept(SeafarerBlocks.SILK_LILIES.get());
-                        output.accept(SeafarerBlocks.TWILIGHT_BLADE.get());
-                        output.accept(SeafarerBlocks.WIDOWBLOOM.get());
-                        output.accept(SeafarerBlocks.DAWNFLAME.get());
-                        output.accept(SeafarerBlocks.SAPPHIRE_COWBELL.get());
-                        output.accept(SeafarerBlocks.ORANGE_VOLCANIC_GRASS.get());
-                        output.accept(SeafarerBlocks.YELLOW_VOLCANIC_GRASS.get());
-                        output.accept(SeafarerBlocks.BLUE_VOLCANIC_GRASS.get());
-                        output.accept(SeafarerBlocks.WHITE_FLOWERING_JUNGLE_LEAVES.get());
-                        output.accept(SeafarerBlocks.ORANGE_FLOWERING_JUNGLE_LEAVES.get());
-                        output.accept(SeafarerBlocks.YELLOW_FLOWERING_JUNGLE_LEAVES.get());
-                        output.accept(SeafarerBlocks.BLUE_FLOWERING_JUNGLE_LEAVES.get());
-                        output.accept(SeafarerBlocks.MAGENTA_FLOWERING_JUNGLE_LEAVES.get());
+
+                        // volcanic island plants
+//                        output.accept(SeafarerBlocks.FIERY_DUSTER.get());
+//                        output.accept(SeafarerBlocks.SILK_LILIES.get());
+//                        output.accept(SeafarerBlocks.TWILIGHT_BLADE.get());
+//                        output.accept(SeafarerBlocks.WIDOWBLOOM.get());
+//                        output.accept(SeafarerBlocks.DAWNFLAME.get());
+//                        output.accept(SeafarerBlocks.SAPPHIRE_COWBELL.get());
+//                        output.accept(SeafarerBlocks.ORANGE_VOLCANIC_GRASS.get());
+//                        output.accept(SeafarerBlocks.YELLOW_VOLCANIC_GRASS.get());
+//                        output.accept(SeafarerBlocks.BLUE_VOLCANIC_GRASS.get());
+//                        output.accept(SeafarerBlocks.WHITE_FLOWERING_JUNGLE_LEAVES.get());
+//                        output.accept(SeafarerBlocks.ORANGE_FLOWERING_JUNGLE_LEAVES.get());
+//                        output.accept(SeafarerBlocks.YELLOW_FLOWERING_JUNGLE_LEAVES.get());
+//                        output.accept(SeafarerBlocks.BLUE_FLOWERING_JUNGLE_LEAVES.get());
+//                        output.accept(SeafarerBlocks.MAGENTA_FLOWERING_JUNGLE_LEAVES.get());
+
                         output.accept(SeafarerBlocks.BLACK_CHRISTMAS_TREE_WORM.get());
                         output.accept(SeafarerBlocks.WHITE_CHRISTMAS_TREE_WORM.get());
                         output.accept(SeafarerBlocks.RED_CHRISTMAS_TREE_WORM.get());
@@ -76,53 +79,53 @@ public class SeafarerTab {
                         output.accept(SeafarerItems.DRIED_STARFISH.get());
 
                         // corals
-                        output.accept(SeafarerBlocks.AMBER_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.AMBER_CORAL.get());
-                        output.accept(SeafarerItems.AMBER_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.CERULEAN_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.CERULEAN_CORAL.get());
-                        output.accept(SeafarerItems.CERULEAN_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.MAROON_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.MAROON_CORAL.get());
-                        output.accept(SeafarerItems.MAROON_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.OLIVE_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.OLIVE_CORAL.get());
-                        output.accept(SeafarerItems.OLIVE_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.TURQUOISE_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.TURQUOISE_CORAL.get());
-                        output.accept(SeafarerItems.TURQUOISE_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.VERDANT_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.VERDANT_CORAL.get());
-                        output.accept(SeafarerItems.VERDANT_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_AMBER_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_AMBER_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_AMBER_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_CERULEAN_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_CERULEAN_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_CERULEAN_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_MAROON_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_MAROON_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_MAROON_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_OLIVE_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_OLIVE_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_OLIVE_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_TURQUOISE_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_TURQUOISE_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_TURQUOISE_CORAL_FAN.get());
-
-                        output.accept(SeafarerBlocks.DEAD_VERDANT_CORAL_BLOCK.get());
-                        output.accept(SeafarerBlocks.DEAD_VERDANT_CORAL.get());
-                        output.accept(SeafarerItems.DEAD_VERDANT_CORAL_FAN.get());
+//                        output.accept(SeafarerBlocks.AMBER_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.AMBER_CORAL.get());
+//                        output.accept(SeafarerItems.AMBER_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.CERULEAN_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.CERULEAN_CORAL.get());
+//                        output.accept(SeafarerItems.CERULEAN_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.MAROON_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.MAROON_CORAL.get());
+//                        output.accept(SeafarerItems.MAROON_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.OLIVE_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.OLIVE_CORAL.get());
+//                        output.accept(SeafarerItems.OLIVE_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.TURQUOISE_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.TURQUOISE_CORAL.get());
+//                        output.accept(SeafarerItems.TURQUOISE_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.VERDANT_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.VERDANT_CORAL.get());
+//                        output.accept(SeafarerItems.VERDANT_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_AMBER_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_AMBER_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_AMBER_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_CERULEAN_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_CERULEAN_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_CERULEAN_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_MAROON_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_MAROON_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_MAROON_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_OLIVE_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_OLIVE_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_OLIVE_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_TURQUOISE_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_TURQUOISE_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_TURQUOISE_CORAL_FAN.get());
+//
+//                        output.accept(SeafarerBlocks.DEAD_VERDANT_CORAL_BLOCK.get());
+//                        output.accept(SeafarerBlocks.DEAD_VERDANT_CORAL.get());
+//                        output.accept(SeafarerItems.DEAD_VERDANT_CORAL_FAN.get());
 
                         // spiky shell blocks
                         output.accept(SeafarerBlocks.SPIKY_SHELL.get());
@@ -172,62 +175,62 @@ public class SeafarerTab {
                         output.accept(SeafarerBlocks.SEA_GLASS_SAND.get());
 
                         // coraline sand
-                        output.accept(SeafarerBlocks.CORALINE_SAND.get());
-                        output.accept(SeafarerBlocks.SHELLY_CORALINE_SAND.get());
-                        output.accept(SeafarerBlocks.STARRY_CORALINE_SAND.get());
-                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_STAIRS.get());
-                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_SLAB.get());
-                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_WALL.get());
-                        output.accept(SeafarerBlocks.CHISELED_CORALINE_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE_STAIRS.get());
-                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE_SLAB.get());
-                        output.accept(SeafarerBlocks.CUT_CORALINE_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.CUT_CORALINE_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.CORALINE_SAND.get());
+//                        output.accept(SeafarerBlocks.SHELLY_CORALINE_SAND.get());
+//                        output.accept(SeafarerBlocks.STARRY_CORALINE_SAND.get());
+//                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_STAIRS.get());
+//                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.CORALINE_SANDSTONE_WALL.get());
+//                        output.accept(SeafarerBlocks.CHISELED_CORALINE_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE_STAIRS.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_CORALINE_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.CUT_CORALINE_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.CUT_CORALINE_SANDSTONE_SLAB.get());
 
                         // volcanic sand
-                        output.accept(SeafarerBlocks.VOLCANIC_SAND.get());
-                        output.accept(SeafarerBlocks.SHELLY_VOLCANIC_SAND.get());
-                        output.accept(SeafarerBlocks.STARRY_VOLCANIC_SAND.get());
-                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_STAIRS.get());
-                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_SLAB.get());
-                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_WALL.get());
-                        output.accept(SeafarerBlocks.CHISELED_VOLCANIC_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE_STAIRS.get());
-                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE_SLAB.get());
-                        output.accept(SeafarerBlocks.CUT_VOLCANIC_SANDSTONE.get());
-                        output.accept(SeafarerBlocks.CUT_VOLCANIC_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_SAND.get());
+//                        output.accept(SeafarerBlocks.SHELLY_VOLCANIC_SAND.get());
+//                        output.accept(SeafarerBlocks.STARRY_VOLCANIC_SAND.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_STAIRS.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_SANDSTONE_WALL.get());
+//                        output.accept(SeafarerBlocks.CHISELED_VOLCANIC_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE_STAIRS.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_VOLCANIC_SANDSTONE_SLAB.get());
+//                        output.accept(SeafarerBlocks.CUT_VOLCANIC_SANDSTONE.get());
+//                        output.accept(SeafarerBlocks.CUT_VOLCANIC_SANDSTONE_SLAB.get());
 
                         // scoria
-                        output.accept(SeafarerBlocks.MOLTEN_SCORIA.get());
-                        output.accept(SeafarerBlocks.MOSSY_SCORIA.get());
-                        output.accept(SeafarerBlocks.SCORIA.get());
-                        output.accept(SeafarerBlocks.SCORIA_STAIRS.get());
-                        output.accept(SeafarerBlocks.SCORIA_SLAB.get());
-                        output.accept(SeafarerBlocks.SCORIA_WALL.get());
-
-                        output.accept(SeafarerBlocks.POLISHED_SCORIA.get());
-                        output.accept(SeafarerBlocks.POLISHED_SCORIA_STAIRS.get());
-                        output.accept(SeafarerBlocks.POLISHED_SCORIA_SLAB.get());
-                        output.accept(SeafarerBlocks.POLISHED_SCORIA_WALL.get());
-
-                        output.accept(SeafarerBlocks.SCORIA_BRICKS.get());
-                        output.accept(SeafarerBlocks.SCORIA_BRICK_STAIRS.get());
-                        output.accept(SeafarerBlocks.SCORIA_BRICK_SLAB.get());
-                        output.accept(SeafarerBlocks.SCORIA_BRICK_WALL.get());
-
-                        output.accept(SeafarerBlocks.SMOOTH_SCORIA.get());
-                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_STAIRS.get());
-                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_SLAB.get());
-                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_WALL.get());
-
-                        output.accept(SeafarerBlocks.CHISELED_SCORIA_BRICKS.get());
+//                        output.accept(SeafarerBlocks.MOLTEN_SCORIA.get());
+//                        output.accept(SeafarerBlocks.MOSSY_SCORIA.get());
+//                        output.accept(SeafarerBlocks.SCORIA.get());
+//                        output.accept(SeafarerBlocks.SCORIA_STAIRS.get());
+//                        output.accept(SeafarerBlocks.SCORIA_SLAB.get());
+//                        output.accept(SeafarerBlocks.SCORIA_WALL.get());
+//
+//                        output.accept(SeafarerBlocks.POLISHED_SCORIA.get());
+//                        output.accept(SeafarerBlocks.POLISHED_SCORIA_STAIRS.get());
+//                        output.accept(SeafarerBlocks.POLISHED_SCORIA_SLAB.get());
+//                        output.accept(SeafarerBlocks.POLISHED_SCORIA_WALL.get());
+//
+//                        output.accept(SeafarerBlocks.SCORIA_BRICKS.get());
+//                        output.accept(SeafarerBlocks.SCORIA_BRICK_STAIRS.get());
+//                        output.accept(SeafarerBlocks.SCORIA_BRICK_SLAB.get());
+//                        output.accept(SeafarerBlocks.SCORIA_BRICK_WALL.get());
+//
+//                        output.accept(SeafarerBlocks.SMOOTH_SCORIA.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_STAIRS.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_SLAB.get());
+//                        output.accept(SeafarerBlocks.SMOOTH_SCORIA_WALL.get());
+//
+//                        output.accept(SeafarerBlocks.CHISELED_SCORIA_BRICKS.get());
 
                         // volcanic core
-                        output.accept(SeafarerBlocks.VOLCANIC_CORE.get());
+//                        output.accept(SeafarerBlocks.VOLCANIC_CORE.get());
 
                         output.accept(SeafarerItems.SEA_GLASS_PEBBLES.get());
 
