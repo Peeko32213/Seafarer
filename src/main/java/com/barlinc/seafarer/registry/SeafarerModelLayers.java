@@ -9,6 +9,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public class SeafarerModelLayers {
 
+    public static final ModelLayerLocation CLUTCH = main("clutch");
     public static final ModelLayerLocation MAGMAW = main("magmaw");
 
     private static ModelLayerLocation register(String id, String name) {

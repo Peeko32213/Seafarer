@@ -1,6 +1,7 @@
 package com.barlinc.seafarer.events;
 
 import com.barlinc.seafarer.Seafarer;
+import com.barlinc.seafarer.entities.Clutch;
 import com.barlinc.seafarer.entities.Magmaw;
 import com.barlinc.seafarer.registry.SeafarerEntities;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -15,11 +16,13 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void registerSpawnPlacements(SpawnPlacementRegisterEvent event) {
+        event.register(SeafarerEntities.CLUTCH.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Clutch::canSpawn, SpawnPlacementRegisterEvent.Operation.OR);
         event.register(SeafarerEntities.MAGMAW.get(), SpawnPlacements.Type.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Magmaw::canSpawn, SpawnPlacementRegisterEvent.Operation.OR);
     }
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(SeafarerEntities.CLUTCH.get(), Clutch.createAttributes().build());
         event.put(SeafarerEntities.MAGMAW.get(), Magmaw.createAttributes().build());
     }
 }

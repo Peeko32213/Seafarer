@@ -1,6 +1,7 @@
 package com.barlinc.seafarer.registry;
 
 import com.barlinc.seafarer.Seafarer;
+import com.barlinc.seafarer.entities.Clutch;
 import com.barlinc.seafarer.entities.Magmaw;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -15,9 +16,17 @@ public class SeafarerEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Seafarer.MOD_ID);
 
+    public static final RegistryObject<EntityType<Clutch>> CLUTCH = ENTITY_TYPES.register(
+            "clutch", () ->
+            EntityType.Builder.of(Clutch::new, MobCategory.MONSTER)
+                    .sized(0.6F, 0.8F)
+                    .clientTrackingRange(10)
+                    .build(new ResourceLocation(Seafarer.MOD_ID, "clutch").toString())
+    );
+
     public static final RegistryObject<EntityType<Magmaw>> MAGMAW = ENTITY_TYPES.register(
             "magmaw", () ->
-            EntityType.Builder.of(Magmaw::new, MobCategory.WATER_CREATURE)
+            EntityType.Builder.of(Magmaw::new, MobCategory.MONSTER)
                     .sized(1.2F, 1.3F)
                     .clientTrackingRange(10)
                     .fireImmune()

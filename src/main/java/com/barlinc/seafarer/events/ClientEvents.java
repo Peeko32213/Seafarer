@@ -1,8 +1,10 @@
 package com.barlinc.seafarer.events;
 
 import com.barlinc.seafarer.Seafarer;
+import com.barlinc.seafarer.client.models.ClutchModel;
 import com.barlinc.seafarer.client.models.MagmawModel;
 import com.barlinc.seafarer.client.particles.VolcanicSmokeParticle;
+import com.barlinc.seafarer.client.renderer.ClutchRenderer;
 import com.barlinc.seafarer.client.renderer.MagmawRenderer;
 import com.barlinc.seafarer.registry.*;
 import net.minecraft.client.renderer.BiomeColors;
@@ -66,11 +68,13 @@ public final class ClientEvents {
 
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(SeafarerEntities.CLUTCH.get(), ClutchRenderer::new);
         event.registerEntityRenderer(SeafarerEntities.MAGMAW.get(), MagmawRenderer::new);
     }
 
     @SubscribeEvent
     public static void registerEntityLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(SeafarerModelLayers.CLUTCH, ClutchModel::createBodyLayer);
         event.registerLayerDefinition(SeafarerModelLayers.MAGMAW, MagmawModel::createBodyLayer);
     }
 }

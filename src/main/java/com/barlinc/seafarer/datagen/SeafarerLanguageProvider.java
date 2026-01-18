@@ -33,6 +33,7 @@ public class SeafarerLanguageProvider extends LanguageProvider {
         SeafarerItems.ITEM_TRANSLATIONS.forEach(this::forItems);
         SeafarerPaintings.PAINTING_TRANSLATIONS.forEach(this::translatePainting);
 
+        this.forEntity(SeafarerEntities.CLUTCH);
         this.forEntity(SeafarerEntities.MAGMAW);
 
         this.translateBiome(SeafarerBiomes.VOLCANIC_ISLAND);
